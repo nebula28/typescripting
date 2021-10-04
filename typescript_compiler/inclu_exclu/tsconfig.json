@@ -97,7 +97,8 @@
       // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
       "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
     },
-    "exclude": ["node_modules", "app.ts", "typescript_types/*"],
-    "include": ["typescript_compiler/multi_files/*"]
+    "exclude": ["node_modules", "app.ts", "typescript_types/*"], // node_modules is excluded by default
+    "include": ["typescript_compiler/multi_files/*"], // anything not specified in include will not compile
+    "files": ["typescript_compiler/multi_files/multi_files/app.ts"] // specific files to compile
   }
   
