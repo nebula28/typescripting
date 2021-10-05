@@ -44,7 +44,8 @@ function checkIt(num: number, num2: number) {
         return num + num2;
     }
     // or place return statement
-    // return;
+    return;
 }
 
 checkIt(-1, 1);
+checkIt(2, 1);
