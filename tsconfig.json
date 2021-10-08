@@ -97,5 +97,5 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
-  "include": ["classes_interfaces/classes/app_finished.ts"]
+  "include": ["classes_interfaces/interfaces/interface-class.ts"]
 }
