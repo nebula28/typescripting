@@ -105,3 +105,31 @@ it.addEmployee(newEmployee.name);
 it.describe();
 it.printEmployeeInfo();
 console.log(it);
+
+// singleton
+class CustomerService extends Department {
+    private static instance: CustomerService;
+
+    private constructor(id: string) {
+        super(id, 'Customer Service');
+    }
+
+    static getInstance() {
+        // or CustomerService.instance
+        if(this.instance) {
+            return this.instance;
+        }
+        this.instance = new CustomerService('d3');
+        return this.instance;
+    }
+
+    describe() {
+        console.log('IT Department - ID: ' + this.id);
+    }
+}
+
+// singleton
+const cs = CustomerService.getInstance();
+
+// this would return the same isntance/object
+// const cs2 = CustomerService.getInstance();
