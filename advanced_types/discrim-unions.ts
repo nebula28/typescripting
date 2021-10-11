@@ -1,3 +1,5 @@
+// discrimiated unions have one property in common (type)
+// typescript will know which properties are available using this common property
 interface Bird {
     type: 'bird';
     flyingSpeed: number;
