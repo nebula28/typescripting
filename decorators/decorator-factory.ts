@@ -7,7 +7,7 @@ function Logger(log: string) {
     
 }
 
-@Logger('logging person . . .');
+@Logger('logging person . . .')
 class Person {
     name = 'josh';
     constructor() {
