@@ -1,16 +1,19 @@
 // enable experimentalDecorators in tsconfig.json
-function Logger(log: string) {
+function Logger(logger: string) {
+    console.log('logger factory . . .');
     return function(constructor: Function) {
-        console.log(log);
+        console.log(logger);
         console.log(constructor);
     }
     
 }
 
 function WithTemplate(template: string, hookId: string)  {
+    console.log('template factory . . .');
     // _constructor tells typescript we know it is a variable that's not being used and it can be ignored
     // return function(_constructor: Function) {
-        return function(constructor: any) {
+    return function(constructor: any) {
+        console.log('rendering template . . .');
         const hookEl = document.getElementById(hookId);
         const p = new constructor();
         if(hookEl) {
@@ -20,7 +23,7 @@ function WithTemplate(template: string, hookId: string)  {
     }
 }
 
-// @Logger('logging person . . .')
+@Logger('logging person . . .')
 @WithTemplate('<h1>My Person Object</h1>', 'app')
 class Person {
     name = 'josh';
