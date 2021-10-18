@@ -54,3 +54,6 @@ class Product {
         return this._price * (1 + tax);
     }
 }
+
+// instantiating Products does not trigger the decorators - only once when the class is defined
+const prod = new Product('book', 12);
