@@ -162,3 +162,5 @@ courseForm?.addEventListener('submit', event => {
     }
     console.log(createdCourse);
 });
+
+// https://github.com/typestack/class-validator
