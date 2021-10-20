@@ -164,3 +164,6 @@ courseForm?.addEventListener('submit', event => {
 });
 
 // https://github.com/typestack/class-validator
+// uses decorators
+// https://angular.io/
+// https://nestjs.com/
