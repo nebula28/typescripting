@@ -29,6 +29,7 @@ export class ProjectList extends BaseComponent<HTMLDivElement, HTMLElement> impl
     @AutoBind
     dropHandler(event: DragEvent) {
         console.log(event, 'dropHandler');
+        event.preventDefault();
         const projectId = event.dataTransfer!.getData('text/plain');
         projectState.moveProject(projectId, this.type === 'active' ? ProjectStatus.Active : ProjectStatus.Finished);
     }
