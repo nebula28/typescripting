@@ -1,9 +1,9 @@
-import BaseComponent from 'base-component.js';
+import BaseComponent from './base-component.js';
 import { Project, ProjectStatus } from '../models/project.js';
 import { AutoBind } from '../decorators/autobind.js';
 import { DragTarget } from '../models/drag-drop.js';
 import { projectState } from '../state/project-state.js';
-import { ProjectItem } from 'project-item.js';
+import { ProjectItem } from './project-item.js';
 
 export class ProjectList extends BaseComponent<HTMLDivElement, HTMLElement> implements DragTarget {
     assignedProjects: Project[];

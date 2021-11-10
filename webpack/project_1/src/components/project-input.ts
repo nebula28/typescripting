@@ -1,5 +1,5 @@
 import BaseComponent from './base-component.js';
-import * as Validation from '../util/validation';
+import * as Validation from '../util/validation.js';
 import { AutoBind as autobind } from '../decorators/autobind.js';
 import { projectState } from '../state/project-state.js';
 
